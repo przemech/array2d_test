@@ -19,7 +19,11 @@ architecture Behavioral of array2d_sim is
 
     signal clk : std_logic := '0';
     
-    signal test_matrix : array2d(0 to 4, 0 to 4);
+    signal test_matrix : array2d(0 to 4, 0 to 4) := (   ('0', '0', '1', '0', '1'),
+                                                        ('1', '0', '0', '0', '0'),
+                                                        ('0', '0', '1', '0', '1'),
+                                                        ('0', '1', '0', '0', '1'),
+                                                        ('1', '0', '0', '0', '1'));
     signal test_matrix_out : array2d(0 to 4, 0 to 4);
     
 begin
